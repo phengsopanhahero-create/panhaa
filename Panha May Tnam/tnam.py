@@ -1,2 +1,2 @@
-while True:
-    print("Nheak Tnam!!!")
+print("Hello")
+print("hi")
