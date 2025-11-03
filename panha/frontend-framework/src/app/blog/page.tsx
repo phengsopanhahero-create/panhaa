@@ -1,8 +1,13 @@
+'use client'
+
+import { useState } from 'react'
 import Link from 'next/link'
 import { Container } from '@/components/layout'
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui'
+import { Card, CardContent } from '@/components/ui'
 
 export default function BlogPage() {
+  const [selectedCategory, setSelectedCategory] = useState('All')
+
   const posts = [
     {
       id: 1,
@@ -12,7 +17,7 @@ export default function BlogPage() {
       date: 'Nov 1, 2025',
       category: 'Tutorial',
       readTime: '5 min read',
-      image: '📘',
+      image: '🚀',
     },
     {
       id: 2,
@@ -32,7 +37,7 @@ export default function BlogPage() {
       date: 'Oct 25, 2025',
       category: 'Architecture',
       readTime: '10 min read',
-      image: '🏗️',
+      image: '⚛️',
     },
     {
       id: 4,
@@ -42,7 +47,7 @@ export default function BlogPage() {
       date: 'Oct 20, 2025',
       category: 'Tutorial',
       readTime: '6 min read',
-      image: '🎯',
+      image: '🗄️',
     },
     {
       id: 5,
@@ -68,6 +73,10 @@ export default function BlogPage() {
 
   const categories = ['All', 'Tutorial', 'Development', 'Architecture', 'Design', 'Backend']
 
+  const filteredPosts = selectedCategory === 'All'
+    ? posts
+    : posts.filter(post => post.category === selectedCategory)
+
   return (
     <Container className="py-16">
       <div className="max-w-6xl mx-auto">
@@ -83,7 +92,13 @@ export default function BlogPage() {
           {categories.map((category) => (
             <button
               key={category}
-              className="px-4 py-2 rounded-full bg-gray-100 hover:bg-primary-100 hover:text-primary-600 transition-colors text-sm font-medium"
+              type="button"
+              onClick={() => setSelectedCategory(category)}
+              className={`px-4 py-2 rounded-full transition-colors text-sm font-medium ${
+                selectedCategory === category
+                  ? 'bg-primary-600 text-white'
+                  : 'bg-gray-100 hover:bg-primary-100 hover:text-primary-600'
+              }`}
             >
               {category}
             </button>
@@ -92,7 +107,7 @@ export default function BlogPage() {
 
         {/* Blog Posts Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {posts.map((post) => (
+          {filteredPosts.map((post) => (
             <Link key={post.id} href={`/blog/${post.id}`}>
               <Card className="h-full hover:shadow-lg transition-shadow cursor-pointer">
                 <CardContent className="pt-6">
@@ -128,7 +143,7 @@ export default function BlogPage() {
                 placeholder="Enter your email"
                 className="flex-1 rounded-md border border-gray-300 px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500"
               />
-              <button className="px-6 py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition-colors font-medium">
+              <button type="button" className="px-6 py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition-colors font-medium">
                 Subscribe
               </button>
             </div>

@@ -8,9 +8,12 @@ export function Footer() {
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4">Frontend Framework</h3>
+            <h3 className="text-lg font-semibold mb-4">LearnHub 🎓</h3>
             <p className="text-sm text-gray-600">
-              A comprehensive Next.js frontend framework for building modern web applications.
+              Free learning platform for everyone. No barriers, just knowledge.
+            </p>
+            <p className="text-xs text-gray-500 mt-2">
+              Created by <span className="font-semibold text-primary-600">Pheng Sopanha</span>
             </p>
           </div>
 
@@ -74,7 +77,7 @@ export function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-200 text-center text-sm text-gray-600">
-          <p>&copy; {currentYear} Frontend Framework. All rights reserved.</p>
+          <p>&copy; {currentYear} LearnHub by Pheng Sopanha. Free education for everyone.</p>
         </div>
       </div>
     </footer>

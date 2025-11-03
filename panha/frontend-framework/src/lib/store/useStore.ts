@@ -4,7 +4,6 @@ import { devtools, persist } from 'zustand/middleware'
 interface User {
   id: string
   name: string
-  email: string
 }
 
 interface AppState {
