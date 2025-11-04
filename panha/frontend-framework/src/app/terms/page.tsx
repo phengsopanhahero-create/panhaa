@@ -6,13 +6,13 @@ export default function TermsPage() {
     <Container className="py-16">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold mb-4">Terms of Service</h1>
-        <p className="text-gray-600 mb-8">Last updated: November 3, 2025</p>
+        <p className="text-black mb-8">Last updated: November 3, 2025</p>
 
         <Card>
           <CardContent className="pt-6 space-y-6">
             <section>
               <h2 className="text-2xl font-semibold mb-3">1. Acceptance of Terms</h2>
-              <p className="text-gray-700">
+              <p className="text-black">
                 By accessing and using this service, you accept and agree to be bound by
                 the terms and provision of this agreement.
               </p>
@@ -20,11 +20,11 @@ export default function TermsPage() {
 
             <section>
               <h2 className="text-2xl font-semibold mb-3">2. Use License</h2>
-              <p className="text-gray-700 mb-3">
+              <p className="text-black mb-3">
                 Permission is granted to temporarily download one copy of the materials
                 on our website for personal, non-commercial transitory viewing only.
               </p>
-              <ul className="list-disc list-inside space-y-2 text-gray-700">
+              <ul className="list-disc list-inside space-y-2 text-black">
                 <li>This is the grant of a license, not a transfer of title</li>
                 <li>You may not modify or copy the materials</li>
                 <li>You may not use the materials for any commercial purpose</li>
@@ -34,7 +34,7 @@ export default function TermsPage() {
 
             <section>
               <h2 className="text-2xl font-semibold mb-3">3. Disclaimer</h2>
-              <p className="text-gray-700">
+              <p className="text-black">
                 The materials on our website are provided on an 'as is' basis. We make
                 no warranties, expressed or implied, and hereby disclaims and negates
                 all other warranties including, without limitation, implied warranties
@@ -45,7 +45,7 @@ export default function TermsPage() {
 
             <section>
               <h2 className="text-2xl font-semibold mb-3">4. Limitations</h2>
-              <p className="text-gray-700">
+              <p className="text-black">
                 In no event shall we or our suppliers be liable for any damages
                 (including, without limitation, damages for loss of data or profit, or
                 due to business interruption) arising out of the use or inability to
@@ -55,7 +55,7 @@ export default function TermsPage() {
 
             <section>
               <h2 className="text-2xl font-semibold mb-3">5. Revisions</h2>
-              <p className="text-gray-700">
+              <p className="text-black">
                 We may revise these terms of service for our website at any time without
                 notice. By using this website you are agreeing to be bound by the then
                 current version of these terms of service.
@@ -64,7 +64,7 @@ export default function TermsPage() {
 
             <section>
               <h2 className="text-2xl font-semibold mb-3">6. Governing Law</h2>
-              <p className="text-gray-700">
+              <p className="text-black">
                 These terms and conditions are governed by and construed in accordance
                 with the laws and you irrevocably submit to the exclusive jurisdiction
                 of the courts in that location.

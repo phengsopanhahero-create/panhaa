@@ -33,7 +33,7 @@ export default function ExamplesPage() {
           <h1 className="text-5xl font-bold mb-4">
             <span className="gradient-text">Interactive Examples</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-black max-w-2xl mx-auto">
             Explore our beautiful, student-friendly components designed to make learning enjoyable
           </p>
         </div>
@@ -41,8 +41,8 @@ export default function ExamplesPage() {
         <div className="space-y-12">
           {/* Learning Cards Section */}
           <section>
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">📚 Learning Cards</h2>
-            <p className="text-gray-600 mb-8">
+            <h2 className="text-3xl font-bold mb-6 text-black">📚 Learning Cards</h2>
+            <p className="text-black mb-8">
               Beautiful, interactive cards designed specifically for educational content
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -77,8 +77,8 @@ export default function ExamplesPage() {
 
           {/* Progress Tracker Section */}
           <section>
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">📊 Progress Tracker</h2>
-            <p className="text-gray-600 mb-8">
+            <h2 className="text-3xl font-bold mb-6 text-black">📊 Progress Tracker</h2>
+            <p className="text-black mb-8">
               Help students track their learning journey with visual progress indicators
             </p>
             <div className="max-w-2xl mx-auto">
@@ -88,7 +88,7 @@ export default function ExamplesPage() {
 
           {/* Buttons Section */}
           <section>
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">🎯 Buttons</h2>
+            <h2 className="text-3xl font-bold mb-6 text-black">🎯 Buttons</h2>
             <Card>
               <CardHeader>
                 <CardTitle>Button Variants & Sizes</CardTitle>
@@ -119,7 +119,7 @@ export default function ExamplesPage() {
 
           {/* Inputs Section */}
           <section>
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">✏️ Input Fields</h2>
+            <h2 className="text-3xl font-bold mb-6 text-black">✏️ Input Fields</h2>
             <Card>
               <CardHeader>
                 <CardTitle>Form Inputs</CardTitle>
@@ -150,7 +150,7 @@ export default function ExamplesPage() {
 
           {/* Hooks Demo Section */}
           <section>
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">🪝 Custom Hooks Demo</h2>
+            <h2 className="text-3xl font-bold mb-6 text-black">🪝 Custom Hooks Demo</h2>
             <Card>
               <CardHeader>
                 <CardTitle>Interactive Hook Examples</CardTitle>
@@ -164,10 +164,10 @@ export default function ExamplesPage() {
                     onChange={(e) => setSearchTerm(e.target.value)}
                   />
                   <div className="mt-3 p-4 bg-primary-50 rounded-lg">
-                    <p className="text-sm text-gray-700">
+                    <p className="text-sm text-black">
                       Immediate value: <strong className="text-primary-600">{searchTerm || '(empty)'}</strong>
                     </p>
-                    <p className="text-sm text-gray-700">
+                    <p className="text-sm text-black">
                       Debounced value (500ms): <strong className="text-secondary-600">{debouncedSearch || '(empty)'}</strong>
                     </p>
                   </div>
@@ -180,7 +180,7 @@ export default function ExamplesPage() {
                     value={savedValue}
                     onChange={(e) => setSavedValue(e.target.value)}
                   />
-                  <p className="mt-3 p-4 bg-accent-50 rounded-lg text-sm text-gray-700">
+                  <p className="mt-3 p-4 bg-accent-50 rounded-lg text-sm text-black">
                     💾 This value is saved to localStorage and persists across page reloads!
                   </p>
                 </div>
@@ -190,14 +190,14 @@ export default function ExamplesPage() {
 
           {/* Card Variants Section */}
           <section>
-            <h2 className="text-3xl font-bold mb-6 text-gray-800">📦 Card Components</h2>
+            <h2 className="text-3xl font-bold mb-6 text-black">📦 Card Components</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>
                 <CardHeader>
                   <CardTitle>Standard Card</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600">
+                  <p className="text-black">
                     Cards are perfect for organizing content into distinct, easy-to-read sections.
                   </p>
                 </CardContent>
@@ -208,7 +208,7 @@ export default function ExamplesPage() {
                   <CardTitle>Interactive Card</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-black mb-4">
                     Cards can contain any type of content - text, forms, images, or interactive elements.
                   </p>
                   <Button variant="primary" size="sm">Take Action</Button>

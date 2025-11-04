@@ -115,8 +115,8 @@ export default function ServicesPage() {
       <div className="max-w-6xl mx-auto">
         {/* Hero */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">Our Services</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h1 className="text-5xl font-bold text-black mb-6">Our Services</h1>
+          <p className="text-xl text-black max-w-3xl mx-auto">
             From strategy to launch, we provide end-to-end solutions to bring your
             digital vision to life.
           </p>
@@ -173,7 +173,7 @@ export default function ServicesPage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                    <p className="text-gray-600 text-sm">{item.description}</p>
+                    <p className="text-black text-sm">{item.description}</p>
                   </div>
                 </div>
               </div>
@@ -207,7 +207,7 @@ export default function ServicesPage() {
               <Card key={i}>
                 <CardContent className="pt-6">
                   <div className="text-yellow-400 text-2xl mb-4">★★★★★</div>
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-black mb-4">
                     "Excellent service and professional team. They delivered exactly what we
                     needed on time and within budget."
                   </p>
@@ -217,7 +217,7 @@ export default function ServicesPage() {
                     </div>
                     <div>
                       <p className="font-semibold text-sm">Client Name</p>
-                      <p className="text-xs text-gray-500">Company Name</p>
+                      <p className="text-xs text-black">Company Name</p>
                     </div>
                   </div>
                 </CardContent>

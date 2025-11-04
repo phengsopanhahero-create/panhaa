@@ -63,7 +63,7 @@ export default function ProfilePage() {
                     <Button variant="outline" size="sm">
                       Change Photo
                     </Button>
-                    <p className="text-sm text-gray-500 mt-2">
+                    <p className="text-sm text-black mt-2">
                       JPG, GIF or PNG. Max size of 800KB
                     </p>
                   </div>
@@ -106,13 +106,13 @@ export default function ProfilePage() {
                 />
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-black mb-2">
                     Bio
                   </label>
                   <textarea
                     name="bio"
                     rows={4}
-                    className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 disabled:bg-gray-50"
+                    className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 disabled:bg-white"
                     value={formData.bio}
                     onChange={handleChange}
                     disabled={!isEditing}
@@ -144,14 +144,14 @@ export default function ProfilePage() {
               <CardContent className="space-y-6">
                 <div>
                   <h3 className="font-medium mb-2">Account Status</h3>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-sm text-black">
                     Your account is active and in good standing
                   </p>
                 </div>
 
                 <div className="border-t pt-6">
                   <h3 className="font-medium mb-2 text-red-600">Danger Zone</h3>
-                  <p className="text-sm text-gray-600 mb-4">
+                  <p className="text-sm text-black mb-4">
                     Once you delete your account, there is no going back.
                   </p>
                   <Button variant="danger">Delete Account</Button>
@@ -178,7 +178,7 @@ export default function ProfilePage() {
 
                 <div className="border-t pt-6">
                   <h3 className="font-medium mb-2">Two-Factor Authentication</h3>
-                  <p className="text-sm text-gray-600 mb-4">
+                  <p className="text-sm text-black mb-4">
                     Add an extra layer of security to your account
                   </p>
                   <Button variant="outline">Enable 2FA</Button>
@@ -196,7 +196,7 @@ export default function ProfilePage() {
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="font-medium">Email Notifications</p>
-                    <p className="text-sm text-gray-600">
+                    <p className="text-sm text-black">
                       Receive email about your account activity
                     </p>
                   </div>
@@ -206,7 +206,7 @@ export default function ProfilePage() {
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="font-medium">Marketing Emails</p>
-                    <p className="text-sm text-gray-600">
+                    <p className="text-sm text-black">
                       Receive emails about new products and features
                     </p>
                   </div>
@@ -216,7 +216,7 @@ export default function ProfilePage() {
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="font-medium">Security Alerts</p>
-                    <p className="text-sm text-gray-600">
+                    <p className="text-sm text-black">
                       Get notified about security events
                     </p>
                   </div>

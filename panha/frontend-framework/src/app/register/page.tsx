@@ -57,7 +57,7 @@ export default function RegisterPage() {
               Start Learning
             </Button>
 
-            <div className="text-center text-sm text-gray-600">
+            <div className="text-center text-sm text-black">
               <p className="mb-2">No registration required!</p>
               <p>Access all learning materials completely free.</p>
             </div>

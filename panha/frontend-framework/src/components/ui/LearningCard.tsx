@@ -78,14 +78,14 @@ export function LearningCard({
 
       {/* Content */}
       <div className="relative">
-        <h3 className="text-xl font-bold mb-2 text-gray-800 group-hover:text-primary-600 transition-colors">
+        <h3 className="text-xl font-bold mb-2 text-black group-hover:text-primary-600 transition-colors">
           {title}
         </h3>
-        <p className="text-gray-600 text-sm mb-4 line-clamp-2">{description}</p>
+        <p className="text-black text-sm mb-4 line-clamp-2">{description}</p>
 
         {/* Duration */}
         {duration && (
-          <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
+          <div className="flex items-center gap-2 text-sm text-black mb-4">
             <svg
               className="w-4 h-4"
               fill="none"
@@ -107,7 +107,7 @@ export function LearningCard({
         {progress !== undefined && (
           <div className="mb-4">
             <div className="flex justify-between items-center mb-1">
-              <span className="text-xs font-medium text-gray-600">Progress</span>
+              <span className="text-xs font-medium text-black">Progress</span>
               <span className="text-xs font-bold text-primary-600">{progress}%</span>
             </div>
             <div className="h-2 bg-gray-200 rounded-full overflow-hidden">

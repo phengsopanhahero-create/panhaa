@@ -15,11 +15,11 @@ export default function AboutPage() {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <p className="text-gray-600 mb-4">
+            <p className="text-black mb-4">
               This framework is built using the latest web technologies and best practices
               to help you build scalable, maintainable, and performant web applications.
             </p>
-            <p className="text-gray-600">
+            <p className="text-black">
               It includes everything you need to get started with a professional-grade
               Next.js application, from UI components to state management and API integration.
             </p>
@@ -29,7 +29,7 @@ export default function AboutPage() {
         <div className="space-y-6">
           <div>
             <h2 className="text-2xl font-semibold mb-3">Architecture</h2>
-            <ul className="space-y-2 text-gray-600">
+            <ul className="space-y-2 text-black">
               <li><strong>src/app/</strong> - Next.js App Router pages and layouts</li>
               <li><strong>src/components/</strong> - Reusable UI and layout components</li>
               <li><strong>src/lib/</strong> - Utilities, hooks, API client, and state management</li>
@@ -40,7 +40,7 @@ export default function AboutPage() {
 
           <div>
             <h2 className="text-2xl font-semibold mb-3">Key Features</h2>
-            <ul className="space-y-2 text-gray-600">
+            <ul className="space-y-2 text-black">
               <li>Server and Client Components with Next.js 15</li>
               <li>Type-safe development with TypeScript</li>
               <li>Responsive design with Tailwind CSS</li>

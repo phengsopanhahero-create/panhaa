@@ -63,8 +63,8 @@ export function TabsTrigger({ value, children, className }: TabsTriggerProps) {
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2',
         'disabled:pointer-events-none disabled:opacity-50',
         activeTab === value
-          ? 'bg-white text-gray-900 shadow-sm'
-          : 'text-gray-600 hover:text-gray-900',
+          ? 'bg-white text-black shadow-sm'
+          : 'text-black hover:text-black',
         className
       )}
       onClick={() => setActiveTab(value)}

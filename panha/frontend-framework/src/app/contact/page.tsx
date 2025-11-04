@@ -34,8 +34,8 @@ export default function ContactPage() {
     <Container className="py-16">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Get in Touch</h1>
-          <p className="text-xl text-gray-600">
+          <h1 className="text-4xl font-bold text-black mb-4">Get in Touch</h1>
+          <p className="text-xl text-black">
             Have questions? We'd love to hear from you.
           </p>
         </div>
@@ -48,7 +48,7 @@ export default function ContactPage() {
                 <div className="text-center">
                   <div className="text-4xl mb-4">📧</div>
                   <h3 className="font-semibold mb-2">Email</h3>
-                  <p className="text-sm text-gray-600">hello@example.com</p>
+                  <p className="text-sm text-black">hello@example.com</p>
                 </div>
               </CardContent>
             </Card>
@@ -58,7 +58,7 @@ export default function ContactPage() {
                 <div className="text-center">
                   <div className="text-4xl mb-4">📞</div>
                   <h3 className="font-semibold mb-2">Phone</h3>
-                  <p className="text-sm text-gray-600">+1 (555) 123-4567</p>
+                  <p className="text-sm text-black">+1 (555) 123-4567</p>
                 </div>
               </CardContent>
             </Card>
@@ -68,7 +68,7 @@ export default function ContactPage() {
                 <div className="text-center">
                   <div className="text-4xl mb-4">📍</div>
                   <h3 className="font-semibold mb-2">Office</h3>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-sm text-black">
                     123 Business Street
                     <br />
                     San Francisco, CA 94107
@@ -88,7 +88,7 @@ export default function ContactPage() {
                 <div className="text-center py-8">
                   <div className="text-6xl mb-4">✓</div>
                   <h3 className="text-2xl font-semibold mb-2">Message Sent!</h3>
-                  <p className="text-gray-600 mb-6">
+                  <p className="text-black mb-6">
                     Thank you for contacting us. We'll get back to you soon.
                   </p>
                   <Button onClick={() => setIsSubmitted(false)}>
@@ -127,7 +127,7 @@ export default function ContactPage() {
                   />
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block text-sm font-medium text-black mb-2">
                       Message
                     </label>
                     <textarea

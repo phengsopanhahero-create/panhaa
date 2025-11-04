@@ -3,23 +3,60 @@
 @import "tailwindcss/utilities" layer(utilities);
 
 body {
-  background: linear-gradient(135deg, #f5f7fa 0%, #e8f0fe 100%);
+  background:
+    linear-gradient(rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.95)),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(6, 182, 212, 0.03) 2px,
+      rgba(6, 182, 212, 0.03) 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 2px,
+      rgba(6, 182, 212, 0.03) 2px,
+      rgba(6, 182, 212, 0.03) 4px
+    ),
+    radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(168, 85, 247, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(6, 182, 212, 0.1) 0%, transparent 50%),
+    linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
   font-family: 'Inter', system-ui, sans-serif;
+  color: #00FF00;
   line-height: 1.7;
   min-height: 100vh;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', system-ui, sans-serif;
   font-weight: 700;
   line-height: 1.2;
+  color: #00FF00;
+}
+
+p {
+  color: #00FF00;
+}
+
+a {
+  color: #06b6d4;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #22d3ee;
 }
 
 .gradient-text {
-  background: linear-gradient(to right, #2563eb, #d946ef, #10b981);
+  background: linear-gradient(to right, #3b82f6, #06b6d4, #a855f7);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: gradientShift 3s ease infinite;
+  background-size: 200% auto;
 }
 
 .card-hover {
@@ -33,6 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-gradient {
   background: linear-gradient(to right, #3b82f6, #d946ef);
+  color: #ffffff;
   transition: all 0.3s ease;
 }
 
@@ -47,6 +85,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   border: 2px solid transparent;
+  color: #000000;
 }
 
 .learning-card:hover {
@@ -94,6 +133,170 @@ h1, h2, h3, h4, h5, h6 {
   animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+.animate-pulse-delay-1 {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation-delay: 1s;
+}
+
+.animate-pulse-delay-2 {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation-delay: 2s;
+}
+
 .animate-float {
   animation: float 3s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(6, 182, 212, 0.5),
+                0 0 10px rgba(6, 182, 212, 0.3),
+                0 0 15px rgba(6, 182, 212, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.8),
+                0 0 20px rgba(6, 182, 212, 0.5),
+                0 0 30px rgba(6, 182, 212, 0.3);
+  }
+}
+
+@keyframes binaryRain {
+  0% { transform: translateY(-100%); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+@keyframes circuitPulse {
+  0%, 100% {
+    border-color: rgba(6, 182, 212, 0.3);
+    box-shadow: 0 0 5px rgba(6, 182, 212, 0.2);
+  }
+  50% {
+    border-color: rgba(6, 182, 212, 0.8);
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.4);
+  }
+}
+
+@keyframes codeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.tech-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+.circuit-pulse {
+  animation: circuitPulse 2s ease-in-out infinite;
+}
+
+/* Tech-themed background pattern */
+.bg-grid-pattern {
+  background-image:
+    linear-gradient(rgba(6, 182, 212, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(6, 182, 212, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Code block styling */
+.code-block {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 41, 59, 0.9) 100%);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  font-family: 'Courier New', monospace;
+  color: #06b6d4;
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.1);
+}
+
+/* Tech card with circuit effect */
+.tech-card {
+  position: relative;
+  background: linear-gradient(135deg, rgba(53, 80, 142, 0.95) 0%, rgba(30, 41, 59, 0.95) 100%);
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  color: #00FF00;
+}
+
+.tech-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, #06b6d4, #3b82f6, #a855f7);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tech-card::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.1) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tech-card:hover::before {
+  opacity: 1;
+}
+
+.tech-card:hover::after {
+  opacity: 1;
+  animation: rotate 10s linear infinite;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(6, 182, 212, 0.2);
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Scrollbar styling for dark theme */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #06b6d4, #3b82f6);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #22d3ee, #60a5fa);
+}
+
+/* Selection color */
+::selection {
+  background: rgba(6, 182, 212, 0.3);
+  color: #fff;
+}
+
+::-moz-selection {
+  background: rgba(6, 182, 212, 0.3);
+  color: #fff;
 }

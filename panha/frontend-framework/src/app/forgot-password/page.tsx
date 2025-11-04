@@ -43,10 +43,10 @@ export default function ForgotPasswordPage() {
           {isSubmitted ? (
             <div className="text-center space-y-4">
               <div className="text-6xl">📧</div>
-              <p className="text-gray-600">
+              <p className="text-black">
                 We've sent password reset instructions to <strong>{email}</strong>
               </p>
-              <p className="text-sm text-gray-500">
+              <p className="text-sm text-black">
                 Didn't receive the email? Check your spam folder or try again.
               </p>
               <div className="space-y-2">

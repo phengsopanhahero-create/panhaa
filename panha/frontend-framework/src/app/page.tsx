@@ -44,57 +44,62 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-primary-50 via-secondary-50 to-accent-50 py-20 sm:py-32">
-        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+      <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900/20 to-slate-900 py-20 sm:py-32">
+        <div className="absolute inset-0 bg-grid-pattern opacity-30"></div>
+        <div className="absolute top-0 left-0 w-full h-full">
+          <div className="absolute top-20 left-10 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl animate-pulse-slow"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse-delay-1"></div>
+          <div className="absolute top-1/2 left-1/2 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse-delay-2"></div>
+        </div>
         <Container className="relative">
           <div className="text-center animate-fade-in">
             <div className="mb-6 inline-block">
-              <span className="inline-flex items-center gap-2 rounded-full bg-primary-100 px-6 py-2 text-sm font-medium text-primary-700">
+              <span className="inline-flex items-center gap-2 rounded-full bg-cyan-500/20 border border-cyan-500/30 px-6 py-2 text-sm font-medium text-cyan-300 backdrop-blur-sm">
                 <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-400"></span>
                 </span>
-                New: Student Learning Platform
+                <span className="font-mono">{'<Code/>'}</span> Platform for Modern Developers
               </span>
             </div>
 
             <h1 className="text-5xl font-bold tracking-tight sm:text-7xl mb-6 animate-slide-up">
-              <span className="gradient-text">Learn. Build. Succeed.</span>
+              <span className="gradient-text font-mono">CODE-P</span>
+              <br />
+              <span className="text-white text-4xl sm:text-5xl mt-4 block">Learn. Build. Deploy.</span>
             </h1>
 
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed">
+            <p className="text-xl text-cyan-100/80 max-w-3xl mx-auto mb-8 leading-relaxed">
+              Master programming with interactive coding lessons, real-world projects, and cutting-edge technology.
               Your journey to becoming a skilled developer starts here.
-              Interactive lessons, beautiful UI, and everything you need to master modern web development.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
               <Link href="/register">
-                <Button className="btn-gradient text-white px-8 py-6 text-lg rounded-2xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all">
-                  Start Learning Free
-                  <span className="ml-2">→</span>
+                <Button className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white px-8 py-6 text-lg rounded-xl shadow-lg shadow-cyan-500/50 hover:shadow-cyan-500/70 transform hover:scale-105 transition-all font-semibold">
+                  <span className="font-mono">{'<Start />'}</span> Learn Free
                 </Button>
               </Link>
               <Link href="/examples">
-                <Button variant="outline" className="px-8 py-6 text-lg rounded-2xl border-2 border-primary-300 hover:bg-white hover:border-primary-500">
-                  Explore Examples
-                  <span className="ml-2">📚</span>
+                <Button variant="outline" className="px-8 py-6 text-lg rounded-xl border-2 border-cyan-400/50 text-cyan-300 hover:bg-cyan-500/10 hover:border-cyan-400 backdrop-blur-sm">
+                  <span className="font-mono">{'{ }'}</span> View Examples
                 </Button>
               </Link>
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto pt-8 border-t border-gray-200">
+            <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto pt-8 border-t border-cyan-500/20">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary-600 mb-1">50+</div>
-                <div className="text-sm text-gray-600">Lessons</div>
+                <div className="text-3xl font-bold text-cyan-400 mb-1 font-mono">50+</div>
+                <div className="text-sm text-cyan-200/60">Coding Lessons</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-secondary-600 mb-1">10k+</div>
-                <div className="text-sm text-gray-600">Students</div>
+                <div className="text-3xl font-bold text-blue-400 mb-1 font-mono">10k+</div>
+                <div className="text-sm text-cyan-200/60">Developers</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-accent-600 mb-1">100%</div>
-                <div className="text-sm text-gray-600">Free</div>
+                <div className="text-3xl font-bold text-purple-400 mb-1 font-mono">100%</div>
+                <div className="text-sm text-cyan-200/60">Open Source</div>
               </div>
             </div>
           </div>
@@ -102,14 +107,17 @@ export default function Home() {
       </section>
 
       {/* Learning Paths */}
-      <section className="py-20 bg-white/50 backdrop-blur">
-        <Container>
+      <section className="py-20 bg-gradient-to-b from-slate-900 to-slate-800 relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-pattern opacity-20"></div>
+        <Container className="relative">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
-              Choose Your <span className="gradient-text">Learning Path</span>
+              <span className="text-white font-mono">{'{ '}</span>
+              <span className="gradient-text">Choose Your Path</span>
+              <span className="text-white font-mono">{' }'}</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Whether you're just starting out or looking to advance your skills, we have the perfect path for you
+            <p className="text-xl text-cyan-100/70 max-w-2xl mx-auto">
+              From beginner to expert, master coding with structured learning paths
             </p>
           </div>
 
@@ -117,26 +125,26 @@ export default function Home() {
             {learningPaths.map((path, index) => (
               <div
                 key={index}
-                className="learning-card group cursor-pointer"
+                className="tech-card group cursor-pointer rounded-2xl p-8"
                 onMouseEnter={() => setHoveredCard(index)}
                 onMouseLeave={() => setHoveredCard(null)}
               >
-                <div className={`w-16 h-16 bg-gradient-to-br ${path.color} rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                <div className={`w-16 h-16 bg-gradient-to-br ${path.color} rounded-xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg tech-glow`}>
                   {path.icon}
                 </div>
-                <h3 className="text-2xl font-bold mb-3 text-gray-800">{path.title}</h3>
-                <p className="text-gray-600 mb-6">{path.description}</p>
+                <h3 className="text-2xl font-bold mb-3 text-white font-mono">{path.title}</h3>
+                <p className="text-cyan-100/70 mb-6">{path.description}</p>
                 <ul className="space-y-3">
                   {path.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center text-sm text-gray-700">
-                      <span className="text-accent-500 mr-2">✓</span>
+                    <li key={idx} className="flex items-center text-sm text-cyan-200/80">
+                      <span className="text-cyan-400 mr-2 font-mono">{'>'}</span>
                       {feature}
                     </li>
                   ))}
                 </ul>
-                <div className={`mt-6 text-primary-600 font-semibold flex items-center gap-2 ${hoveredCard === index ? 'translate-x-2' : ''} transition-transform duration-300`}>
-                  Start Learning
-                  <span>→</span>
+                <div className={`mt-6 text-cyan-400 font-semibold flex items-center gap-2 font-mono ${hoveredCard === index ? 'translate-x-2' : ''} transition-transform duration-300`}>
+                  <span>{'// '}</span>Start Learning
+                  <span className="text-lg">→</span>
                 </div>
               </div>
             ))}
@@ -145,14 +153,17 @@ export default function Home() {
       </section>
 
       {/* Features Grid */}
-      <section className="py-20">
-        <Container>
+      <section className="py-20 bg-slate-900/50 relative">
+        <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+        <Container className="relative">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
-              Why Students <span className="gradient-text">Love Us</span>
+              <span className="text-white font-mono">const </span>
+              <span className="gradient-text">features</span>
+              <span className="text-white font-mono"> = {'['}</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Everything you need to succeed in your learning journey
+            <p className="text-xl text-cyan-100/70 max-w-2xl mx-auto">
+              Built with modern tech stack for the best learning experience
             </p>
           </div>
 
@@ -160,32 +171,65 @@ export default function Home() {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-primary-200 group"
+                className="bg-gradient-to-br from-slate-800/90 to-slate-900/90 rounded-2xl p-8 shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 border border-cyan-500/20 hover:border-cyan-400/50 group backdrop-blur-sm circuit-pulse"
               >
-                <div className="text-5xl mb-4 group-hover:scale-110 group-hover:animate-bounce-slow transition-transform">
+                <div className="text-5xl mb-4 group-hover:scale-110 transition-transform filter drop-shadow-lg">
                   {feature.icon}
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-gray-800">{feature.title}</h3>
-                <p className="text-gray-600">{feature.desc}</p>
+                <h3 className="text-xl font-bold mb-2 text-white font-mono">{feature.title}</h3>
+                <p className="text-cyan-100/60">{feature.desc}</p>
+                <div className="mt-4 text-cyan-400/50 text-xs font-mono">
+                  {'// Feature '}{index + 1}
+                </div>
               </div>
             ))}
+          </div>
+          <div className="text-center mt-8">
+            <p className="text-white font-mono text-xl">{'];'}</p>
           </div>
         </Container>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary-500 via-secondary-500 to-accent-500">
-        <Container>
+      <section className="py-20 bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-pattern opacity-20"></div>
+        <div className="absolute top-0 left-0 w-full h-full">
+          <div className="absolute top-10 right-20 w-64 h-64 bg-white/5 rounded-full blur-3xl animate-pulse-slow"></div>
+          <div className="absolute bottom-10 left-20 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse-delay-1"></div>
+        </div>
+        <Container className="relative">
           <div className="text-center text-white">
-            <h2 className="text-4xl font-bold mb-6">Ready to Start Your Journey?</h2>
-            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Join thousands of students already learning and building amazing projects
+            <div className="mb-6 inline-block">
+              <span className="text-cyan-200/80 font-mono text-sm">{'/* Ready to code? */'}</span>
+            </div>
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6 font-mono">
+              <span className="text-white">{'function '}</span>
+              <span className="text-yellow-300">startCoding</span>
+              <span className="text-white">{'() {'}</span>
+            </h2>
+            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto text-cyan-50">
+              Join thousands of developers building amazing projects with CODE-P
             </p>
             <Link href="/register">
-              <Button className="bg-white text-primary-600 hover:bg-gray-50 px-10 py-6 text-lg rounded-2xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all font-bold">
-                Get Started Today - It's Free!
+              <Button className="bg-white text-blue-600 hover:bg-cyan-50 px-10 py-6 text-lg rounded-xl shadow-2xl shadow-black/30 hover:shadow-black/50 transform hover:scale-105 transition-all font-bold font-mono">
+                <span className="mr-2">{'<>'}</span>
+                Start Learning Now
+                <span className="ml-2">{'</>'}</span>
               </Button>
             </Link>
+            <div className="mt-8">
+              <span className="text-cyan-200/80 font-mono text-sm">{'}'}</span>
+            </div>
+            <div className="mt-6 flex items-center justify-center gap-8 text-sm text-cyan-100/80">
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                <span className="font-mono">No credit card required</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                <span className="font-mono">100% Free forever</span>
+              </div>
+            </div>
           </div>
         </Container>
       </section>

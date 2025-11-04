@@ -55,7 +55,7 @@ const Modal = forwardRef<HTMLDivElement, ModalProps>(
               <h2 className="text-xl font-semibold">{title}</h2>
               <button
                 onClick={onClose}
-                className="text-gray-400 hover:text-gray-600 transition-colors"
+                className="text-black hover:text-black transition-colors"
               >
                 <svg
                   className="h-6 w-6"

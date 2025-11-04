@@ -81,8 +81,8 @@ export default function BlogPage() {
     <Container className="py-16">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Blog</h1>
-          <p className="text-xl text-gray-600">
+          <h1 className="text-4xl font-bold text-black mb-4">Blog</h1>
+          <p className="text-xl text-black">
             Thoughts, tutorials, and insights from our team
           </p>
         </div>
@@ -97,7 +97,7 @@ export default function BlogPage() {
               className={`px-4 py-2 rounded-full transition-colors text-sm font-medium ${
                 selectedCategory === category
                   ? 'bg-primary-600 text-white'
-                  : 'bg-gray-100 hover:bg-primary-100 hover:text-primary-600'
+                  : 'bg-gray-100 text-black hover:bg-primary-100'
               }`}
             >
               {category}
@@ -112,18 +112,18 @@ export default function BlogPage() {
               <Card className="h-full hover:shadow-lg transition-shadow cursor-pointer">
                 <CardContent className="pt-6">
                   <div className="text-6xl mb-4 text-center">{post.image}</div>
-                  <span className="inline-block px-3 py-1 bg-primary-100 text-primary-600 rounded-full text-xs font-medium mb-3">
+                  <span className="inline-block px-3 py-1 bg-primary-100 text-black rounded-full text-xs font-medium mb-3">
                     {post.category}
                   </span>
-                  <h3 className="text-xl font-semibold mb-2 hover:text-primary-600">
+                  <h3 className="text-xl font-semibold mb-2 text-black">
                     {post.title}
                   </h3>
-                  <p className="text-gray-600 text-sm mb-4">{post.excerpt}</p>
-                  <div className="flex items-center justify-between text-xs text-gray-500">
+                  <p className="text-black text-sm mb-4">{post.excerpt}</p>
+                  <div className="flex items-center justify-between text-xs text-black">
                     <span>{post.author}</span>
                     <span>{post.readTime}</span>
                   </div>
-                  <div className="text-xs text-gray-400 mt-2">{post.date}</div>
+                  <div className="text-xs text-black mt-2">{post.date}</div>
                 </CardContent>
               </Card>
             </Link>
@@ -133,8 +133,8 @@ export default function BlogPage() {
         {/* Newsletter */}
         <Card className="mt-16 bg-gradient-to-r from-primary-50 to-primary-100">
           <CardContent className="py-12 text-center">
-            <h2 className="text-2xl font-bold mb-4">Subscribe to our newsletter</h2>
-            <p className="text-gray-600 mb-6 max-w-md mx-auto">
+            <h2 className="text-2xl font-bold mb-4 text-black">Subscribe to our newsletter</h2>
+            <p className="text-black mb-6 max-w-md mx-auto">
               Get the latest posts delivered right to your inbox. No spam, unsubscribe anytime.
             </p>
             <div className="flex gap-2 max-w-md mx-auto">

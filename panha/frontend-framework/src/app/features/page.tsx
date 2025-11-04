@@ -55,10 +55,10 @@ export default function FeaturesPage() {
       <div className="max-w-6xl mx-auto">
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-5xl font-bold text-black mb-6">
             Everything You Need to Succeed
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-black max-w-3xl mx-auto">
             Our platform provides all the tools and features you need to build, launch,
             and scale your product.
           </p>
@@ -71,7 +71,7 @@ export default function FeaturesPage() {
               <CardContent className="pt-8 pb-6">
                 <div className="text-6xl mb-4">{feature.icon}</div>
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                <p className="text-gray-600 text-sm">{feature.description}</p>
+                <p className="text-black text-sm">{feature.description}</p>
               </CardContent>
             </Card>
           ))}
@@ -82,7 +82,7 @@ export default function FeaturesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold mb-4">Built for Developers</h2>
-              <p className="text-gray-600 mb-6">
+              <p className="text-black mb-6">
                 Clean, well-documented APIs and comprehensive SDKs make integration a
                 breeze. Get up and running in minutes with our detailed documentation
                 and code examples.
@@ -119,7 +119,7 @@ export default function FeaturesPage() {
             </div>
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl font-bold mb-4">Powerful Analytics</h2>
-              <p className="text-gray-600 mb-6">
+              <p className="text-black mb-6">
                 Track every metric that matters. Understand your users, measure
                 performance, and make data-driven decisions with our comprehensive
                 analytics dashboard.
@@ -150,7 +150,7 @@ export default function FeaturesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold mb-4">Enterprise Ready</h2>
-              <p className="text-gray-600 mb-6">
+              <p className="text-black mb-6">
                 Security, compliance, and reliability that enterprise teams demand.
                 SOC 2 certified with 99.99% uptime SLA.
               </p>

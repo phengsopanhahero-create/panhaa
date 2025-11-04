@@ -27,10 +27,10 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       primary:
         'bg-primary-600 text-white hover:bg-primary-700 focus-visible:ring-primary-500',
       secondary:
-        'bg-gray-200 text-gray-900 hover:bg-gray-300 focus-visible:ring-gray-500',
+        'bg-gray-200 text-black hover:bg-gray-300 focus-visible:ring-gray-500',
       outline:
-        'border border-gray-300 bg-transparent hover:bg-gray-100 focus-visible:ring-gray-500',
-      ghost: 'hover:bg-gray-100 focus-visible:ring-gray-500',
+        'border border-gray-300 bg-transparent text-black hover:bg-gray-100 hover:text-black focus-visible:ring-gray-500',
+      ghost: 'text-black hover:bg-gray-100 hover:text-black focus-visible:ring-gray-500',
       danger:
         'bg-red-600 text-white hover:bg-red-700 focus-visible:ring-red-500',
     }

@@ -23,7 +23,7 @@ export function ProgressTracker({ steps, className }: ProgressTrackerProps) {
       {/* Progress Bar */}
       <div className="mb-8">
         <div className="flex justify-between items-center mb-2">
-          <span className="text-sm font-semibold text-gray-700">
+          <span className="text-sm font-semibold text-black">
             Your Progress
           </span>
           <span className="text-sm font-bold text-primary-600">
@@ -63,7 +63,7 @@ export function ProgressTracker({ steps, className }: ProgressTrackerProps) {
                 'flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm transition-all duration-300',
                 step.completed && 'bg-gradient-to-br from-accent-400 to-accent-600 text-white',
                 step.current && 'bg-gradient-to-br from-primary-400 to-primary-600 text-white animate-pulse-slow',
-                !step.completed && !step.current && 'bg-gray-300 text-gray-600'
+                !step.completed && !step.current && 'bg-gray-300 text-black'
               )}
             >
               {step.completed ? (
@@ -82,7 +82,7 @@ export function ProgressTracker({ steps, className }: ProgressTrackerProps) {
                   'font-medium transition-colors',
                   step.current && 'text-primary-700 font-semibold',
                   step.completed && !step.current && 'text-green-700',
-                  !step.completed && !step.current && 'text-gray-600'
+                  !step.completed && !step.current && 'text-black'
                 )}
               >
                 {step.label}
@@ -107,7 +107,7 @@ export function ProgressTracker({ steps, className }: ProgressTrackerProps) {
       {/* Motivational Message */}
       {completedCount > 0 && completedCount < totalSteps && (
         <div className="mt-6 p-4 bg-gradient-to-r from-primary-50 to-secondary-50 rounded-xl border border-primary-200">
-          <p className="text-center text-sm font-medium text-gray-700">
+          <p className="text-center text-sm font-medium text-black">
             {completedCount === totalSteps - 1
               ? "🎉 Almost there! One more step to complete!"
               : `💪 Great job! Keep going, you're ${Math.round(progressPercentage)}% there!`}

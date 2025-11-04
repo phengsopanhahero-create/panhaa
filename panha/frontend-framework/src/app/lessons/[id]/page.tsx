@@ -70,7 +70,7 @@ export default function LessonPage() {
                 >
                   {lesson.difficulty}
                 </span>
-                <span className="text-sm text-gray-600">⏱️ {lesson.duration}</span>
+                <span className="text-sm text-black">⏱️ {lesson.duration}</span>
                 <span className="text-xs px-2 py-1 bg-gray-100 rounded">
                   {lesson.category}
                 </span>
@@ -103,16 +103,16 @@ export default function LessonPage() {
             <ReactMarkdown
               components={{
                 h1: ({ ...props }) => (
-                  <h1 className="text-3xl font-bold text-gray-900 mt-8 mb-4" {...props} />
+                  <h1 className="text-3xl font-bold text-black mt-8 mb-4" {...props} />
                 ),
                 h2: ({ ...props }) => (
-                  <h2 className="text-2xl font-bold text-gray-900 mt-6 mb-3" {...props} />
+                  <h2 className="text-2xl font-bold text-black mt-6 mb-3" {...props} />
                 ),
                 h3: ({ ...props }) => (
-                  <h3 className="text-xl font-bold text-gray-900 mt-4 mb-2" {...props} />
+                  <h3 className="text-xl font-bold text-black mt-4 mb-2" {...props} />
                 ),
                 p: ({ ...props }) => (
-                  <p className="text-gray-700 leading-relaxed mb-4" {...props} />
+                  <p className="text-black leading-relaxed mb-4" {...props} />
                 ),
                 ul: ({ ...props }) => (
                   <ul className="list-disc list-inside mb-4 space-y-2" {...props} />
@@ -121,7 +121,7 @@ export default function LessonPage() {
                   <ol className="list-decimal list-inside mb-4 space-y-2" {...props} />
                 ),
                 li: ({ ...props }) => (
-                  <li className="text-gray-700 ml-4" {...props} />
+                  <li className="text-black ml-4" {...props} />
                 ),
                 code: ({ className, children, ...props }) => {
                   const isInline = !className
@@ -151,7 +151,7 @@ export default function LessonPage() {
                 ),
                 blockquote: ({ ...props }) => (
                   <blockquote
-                    className="border-l-4 border-primary-500 pl-4 italic text-gray-700 my-4"
+                    className="border-l-4 border-primary-500 pl-4 italic text-black my-4"
                     {...props}
                   />
                 ),
@@ -162,7 +162,7 @@ export default function LessonPage() {
                   />
                 ),
                 strong: ({ ...props }) => (
-                  <strong className="font-bold text-gray-900" {...props} />
+                  <strong className="font-bold text-black" {...props} />
                 ),
               }}
             >
@@ -177,8 +177,8 @@ export default function LessonPage() {
         <CardContent className="py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
-              <h3 className="text-lg font-bold text-gray-900">Completed this lesson?</h3>
-              <p className="text-sm text-gray-600">
+              <h3 className="text-lg font-bold text-black">Completed this lesson?</h3>
+              <p className="text-sm text-black">
                 Head back to the dashboard to continue learning!
               </p>
             </div>
@@ -192,7 +192,7 @@ export default function LessonPage() {
       </Card>
 
       {/* Owner Credit */}
-      <div className="text-center mt-6 text-sm text-gray-500">
+      <div className="text-center mt-6 text-sm text-black">
         Platform created by <span className="font-semibold text-primary-600">Pheng Sopanha</span>
       </div>
     </Container>

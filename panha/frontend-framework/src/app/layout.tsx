@@ -6,8 +6,8 @@ import '@/styles/globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Frontend Framework - Next.js',
-  description: 'A comprehensive Next.js frontend framework for building modern web applications',
+  title: 'CODE-P - Learn to Code',
+  description: 'Master programming and web development with CODE-P - Your interactive coding education platform',
 }
 
 export default function RootLayout({

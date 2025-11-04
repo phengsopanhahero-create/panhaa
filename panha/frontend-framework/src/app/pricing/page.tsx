@@ -20,10 +20,10 @@ export default function PricingPage() {
     <Container className="py-16">
       <div className="text-center mb-12">
         <div className="text-7xl mb-6">🎉</div>
-        <h1 className="text-5xl font-bold text-gray-900 mb-4">
+        <h1 className="text-5xl font-bold text-black mb-4">
           100% Free. Forever.
         </h1>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+        <p className="text-xl text-black max-w-2xl mx-auto">
           No credit card required. No hidden fees. Just pure learning.
         </p>
       </div>
@@ -35,9 +35,9 @@ export default function PricingPage() {
             <CardTitle className="text-4xl mb-4">Free Plan</CardTitle>
             <div className="mb-4">
               <span className="text-6xl font-bold text-primary-600">$0</span>
-              <span className="text-2xl text-gray-600"> / forever</span>
+              <span className="text-2xl text-black"> / forever</span>
             </div>
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-black">
               Access everything. Pay nothing. Ever.
             </p>
           </CardHeader>
@@ -56,7 +56,7 @@ export default function PricingPage() {
                   >
                     <path d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-lg text-gray-700">{feature}</span>
+                  <span className="text-lg text-black">{feature}</span>
                 </li>
               ))}
             </ul>
@@ -65,7 +65,7 @@ export default function PricingPage() {
                 Start Learning Now - It's Free! 🚀
               </Button>
             </Link>
-            <p className="text-center text-sm text-gray-500 mt-4">
+            <p className="text-center text-sm text-black mt-4">
               No registration required - just enter your name!
             </p>
           </CardContent>
@@ -79,7 +79,7 @@ export default function PricingPage() {
             <summary className="font-semibold text-lg cursor-pointer">
               Is this really free?
             </summary>
-            <p className="text-gray-600 mt-3">
+            <p className="text-black mt-3">
               Yes! 100% free, forever. No credit card required, no hidden fees, no premium upgrades.
               All lessons are available to everyone at no cost.
             </p>
@@ -88,7 +88,7 @@ export default function PricingPage() {
             <summary className="font-semibold text-lg cursor-pointer">
               Do I need to create an account?
             </summary>
-            <p className="text-gray-600 mt-3">
+            <p className="text-black mt-3">
               Nope! Just enter your name and start learning. We don't collect emails,
               passwords, or any personal information. It's that simple.
             </p>
@@ -97,7 +97,7 @@ export default function PricingPage() {
             <summary className="font-semibold text-lg cursor-pointer">
               What topics can I learn?
             </summary>
-            <p className="text-gray-600 mt-3">
+            <p className="text-black mt-3">
               We offer lessons in Web Development (HTML, CSS, JavaScript), React, Backend Development
               (Node.js, Express), UI/UX Design, and DevOps (Git & GitHub). More content coming soon!
             </p>
@@ -106,7 +106,7 @@ export default function PricingPage() {
             <summary className="font-semibold text-lg cursor-pointer">
               Who created this platform?
             </summary>
-            <p className="text-gray-600 mt-3">
+            <p className="text-black mt-3">
               This platform was created by <span className="font-semibold text-primary-600">Pheng Sopanha</span>
               {' '}with the mission to make quality education accessible to everyone, completely free.
             </p>
